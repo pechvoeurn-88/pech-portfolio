@@ -47,7 +47,7 @@ const base = import.meta.env.BASE_URL;
           <span class="preview-visit">Explore project ↗</span>
         </div>
       </a>
-      <a
+      <!-- <a
         class="showcase-detail"
         href="https://bunyim-kong.github.io/apple-real-estate/"
         target="_blank"
@@ -65,7 +65,7 @@ const base = import.meta.env.BASE_URL;
         <div class="detail-copy">
           <span>PROPERTY SHOWCASE</span><strong>Apple Real Estate</strong>
         </div>
-      </a>
+      </a> -->
       <div class="showcase-craft">
         <span class="craft-icon" aria-hidden="true">✳</span
         ><span

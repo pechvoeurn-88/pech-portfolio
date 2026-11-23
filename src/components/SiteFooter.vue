@@ -1,7 +1,7 @@
 <template>
   <footer class="container">
-    <a class="logo" href="#home">kb<span>.</span></a>
-    <p>© {{ new Date().getFullYear() }} Kong Bunyim · Built with Vue.js</p>
+    <a class="logo" href="#home">VP<span>.</span></a>
+    <p>© {{ new Date().getFullYear() }} Voeurn Pech · Built with Vue.js</p>
     <a href="#home" class="text-link">Back to top ↑</a>
   </footer>
 </template>

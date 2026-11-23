@@ -51,7 +51,7 @@ const base = import.meta.env.BASE_URL;
             </div>
             <div><span>LANGUAGES</span><strong>Khmer · English</strong></div>
           </div>
-          <a class="text-link" :href="`${base}Voeurn-Pech-CV.pdf`" download
+          <a class="text-link" :href="`${base}VOEURN_Pech-CV.pdf`" download
             >Get the full story — download CV ↓</a
           >
         </div>

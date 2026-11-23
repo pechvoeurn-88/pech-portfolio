@@ -6,14 +6,14 @@ let copyTimer;
 
 async function copyEmail() {
   try {
-    await navigator.clipboard.writeText("bunyimkong@gmail.com");
+    await navigator.clipboard.writeText("pechvoeurndev@gmail.com");
     copied.value = true;
     clearTimeout(copyTimer);
     copyTimer = setTimeout(() => {
       copied.value = false;
     }, 2500);
   } catch {
-    window.location.href = "mailto:bunyimkong@gmail.com";
+    window.location.href = "mailto:pechvoeurndev@gmail.comm";
   }
 }
 
@@ -40,7 +40,7 @@ onUnmounted(() => clearTimeout(copyTimer));
             from you.
           </p>
           <div class="email-row">
-            <a href="mailto:bunyimkong@gmail.com">bunyimkong@gmail.com ↗</a
+            <a href="mailto:pechvoeurndev@gmail.com">pechvoeurndev@gmail.com ↗</a
             ><button
               @click="copyEmail"
               :aria-label="copied ? 'Email copied' : 'Copy email address'"
@@ -54,12 +54,12 @@ onUnmounted(() => clearTimeout(copyTimer));
         </div>
         <div class="contact-links">
           <a
-            href="https://github.com/bunyim-kong"
+            href="https://github.com/pechvoeurn-88"
             target="_blank"
             rel="noopener noreferrer"
             >GitHub <span>↗</span></a
-          ><a href="tel:+85517686388">+855 17 686 388 <span>↗</span></a
-          ><a :href="`${base}Kong-Bunyim-CV.pdf`" download
+          ><a href="tel:+85590847087">+855 908 470 87<span>↗</span></a
+          ><a :href="`${base}VOEURN_Pech-CV.pdf`" download
             >Download CV <span>↓</span></a
           >
         </div>

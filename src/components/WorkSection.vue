@@ -4,17 +4,17 @@ const base = import.meta.env.BASE_URL;
 const filter = ref("All projects");
 const filters = ["All projects", "Live websites", "Applications"];
 const projects = [
-  {
-    name: "LMLP Tourism",
-    type: "Travel & discovery",
-    category: "Live websites",
-    image: "project-tourism.jpg",
-    description:
-      "A Khmer-language destination guide bringing Cambodia’s places, travel tips, and hotel information together.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    repo: "LMLP-Tourism",
-    url: "https://bunyim-kong.github.io/LMLP-Tourism/",
-  },
+  // {
+  //   name: "LMLP Tourism",
+  //   type: "Travel & discovery",
+  //   category: "Live websites",
+  //   image: "project-tourism.jpg",
+  //   description:
+  //     "A Khmer-language destination guide bringing Cambodia’s places, travel tips, and hotel information together.",
+  //   tags: ["HTML", "CSS", "JavaScript"],
+  //   repo: "LMLP-Tourism",
+  //   url: "https://bunyim-kong.github.io/LMLP-Tourism/",
+  // },
   {
     name: "Samai Rum Map",
     type: "Full-stack application",
@@ -25,50 +25,50 @@ const projects = [
     tags: ["Laravel", "MySQL", "Maps"],
     repo: "samai-laravel",
   },
-  {
-    name: "Apple Real Estate",
-    type: "Property showcase",
-    category: "Live websites",
-    image: "project-estate.jpg",
-    description:
-      "A property discovery website showcasing houses, apartments, and condos in Phnom Penh.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    repo: "apple-real-estate",
-    url: "https://bunyim-kong.github.io/apple-real-estate/",
-  },
-  {
-    name: "X-Tra Interior",
-    type: "Design & interiors",
-    category: "Live websites",
-    image: "project-interior.jpg",
-    description:
-      "An image-led interior design website with spaces, services, and furniture inspiration.",
-    tags: ["HTML", "CSS"],
-    repo: "Interior",
-    url: "https://bunyim-kong.github.io/Interior/",
-  },
-  {
-    name: "Cafe Shop",
-    type: "Food & hospitality",
-    category: "Live websites",
-    image: "project-cafe.png",
-    description:
-      "A Khmer-language café website with a visual food and drinks menu and shop information.",
-    tags: ["HTML", "CSS"],
-    repo: "Cafe-shop",
-    url: "https://bunyim-kong.github.io/Cafe-shop/",
-  },
-  {
-    name: "Khmer Organic",
-    type: "Agriculture & community",
-    category: "Live websites",
-    image: "project-farm.jpg",
-    description:
-      "A showcase of organic farming, Cambodian produce, and local shops through stories and photography.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    repo: "organic-farm",
-    url: "https://bunyim-kong.github.io/organic-farm/",
-  },
+  // {
+  //   name: "Apple Real Estate",
+  //   type: "Property showcase",
+  //   category: "Live websites",
+  //   image: "project-estate.jpg",
+  //   description:
+  //     "A property discovery website showcasing houses, apartments, and condos in Phnom Penh.",
+  //   tags: ["HTML", "CSS", "JavaScript"],
+  //   repo: "apple-real-estate",
+  //   url: "https://bunyim-kong.github.io/apple-real-estate/",
+  // },
+  // {
+  //   name: "X-Tra Interior",
+  //   type: "Design & interiors",
+  //   category: "Live websites",
+  //   image: "project-interior.jpg",
+  //   description:
+  //     "An image-led interior design website with spaces, services, and furniture inspiration.",
+  //   tags: ["HTML", "CSS"],
+  //   repo: "Interior",
+  //   url: "https://bunyim-kong.github.io/Interior/",
+  // },
+  // {
+  //   name: "Cafe Shop",
+  //   type: "Food & hospitality",
+  //   category: "Live websites",
+  //   image: "project-cafe.png",
+  //   description:
+  //     "A Khmer-language café website with a visual food and drinks menu and shop information.",
+  //   tags: ["HTML", "CSS"],
+  //   repo: "Cafe-shop",
+  //   url: "https://bunyim-kong.github.io/Cafe-shop/",
+  // },
+  // {
+  //   name: "Khmer Organic",
+  //   type: "Agriculture & community",
+  //   category: "Live websites",
+  //   image: "project-farm.jpg",
+  //   description:
+  //     "A showcase of organic farming, Cambodian produce, and local shops through stories and photography.",
+  //   tags: ["HTML", "CSS", "JavaScript"],
+  //   repo: "organic-farm",
+  //   url: "https://bunyim-kong.github.io/organic-farm/",
+  // },
 ];
 const visibleProjects = computed(() =>
   projects.filter(

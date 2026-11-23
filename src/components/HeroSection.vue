@@ -36,8 +36,8 @@ const { motionEnabled, reducedMotion, toggleMotion } = useParallax(scene);
             >Explore my work <span>↗</span></a
           ><a
             class="button secondary"
-            :href="`${base}Voeurn-Pech-CV.pdf`"
-            download
+            :href="`${base}VOEURN_Pech-CV.pdf`"
+            download="VOEURN_Pech-CV.pdf"
             >Download CV <span>↓</span></a
           >
         </div>
