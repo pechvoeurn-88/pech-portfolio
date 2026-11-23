@@ -79,37 +79,57 @@ const base = import.meta.env.BASE_URL;
   align-items: center;
 }
 .portrait-wrap {
-  height: 420px;
   position: relative;
+  width: 100%;
+  max-width: 420px;          /* don't grow too big on desktop */
+  aspect-ratio: 4 / 5;       /* height follows width */
+  margin-inline: auto;       /* centered on small screens */
   background: #292f23;
-  border-radius: 5px;
+  border-radius: 24px;       /* or 200px 200px 24px 24px for an arch shape */
   overflow: hidden;
-  border-radius: 200px;
 }
+
 .portrait-wrap > img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 67%;
+  object-position: center 30%;   /* adjust so the face isn't cropped */
   filter: saturate(0.55);
 }
+
 .portrait-caption {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: auto 0 0 0;
   background: #101811e8;
-  padding: 18px 16px;
+  padding: clamp(12px, 3vw, 18px) clamp(12px, 3vw, 16px);
   display: flex;
   flex-direction: column;
   gap: 7px;
-  font: 10px var(--mono);
+  font: clamp(9px, 2.4vw, 10px) var(--mono);
   letter-spacing: 1px;
 }
+
 .portrait-caption span:last-child {
   color: var(--accent);
-  font-size: 12px;
+  font-size: clamp(11px, 2.8vw, 12px);
   line-height: 1.6;
+}
+
+/* Phones: slightly smaller, shorter image */
+@media (max-width: 600px) {
+  .portrait-wrap {
+    max-width: 320px;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* Large screens when the hero is two columns */
+@media (min-width: 900px) {
+  .portrait-wrap {
+    margin-inline: 0;
+    max-width: 440px;
+  }
 }
 .about-lead {
   font-family: var(--heading);
